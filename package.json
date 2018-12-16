@@ -22,10 +22,6 @@
     "twit": "2.2.11"
   },
   "license": "ISC",
-  "keywords": [
-    "home_timeline",
-    "next",
-    "twitter"
-  ],
+  "keywords": ["home_timeline", "next", "twitter"],
   "description": "Twitter home_timeline.json implemented in a single package."
 }
