@@ -9,7 +9,6 @@ const config = {
   access_token_secret: process.env["TWITTER_OAUTH_SECRET"]
 };
 
-
 const client = Twitter(config);
 
 const dev = process.env.NODE_ENV !== "production";

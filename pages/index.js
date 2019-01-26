@@ -32,7 +32,12 @@ export default class Grid extends Component {
     const { loading } = this.state;
     const headerStyle = { backgroundColor: "#e1e8ed" };
     const embedFormatter = (cell, row, rowIndex, formatExtraData) => {
-      return <TwitterTweetEmbed options={{ width: "100%" }} tweetId={cell} />;
+      return (
+        <TwitterTweetEmbed
+          options={{ height: 400, width: "100%" }}
+          tweetId={cell}
+        />
+      );
     };
     const columns = [
       {
@@ -78,7 +83,7 @@ export default class Grid extends Component {
         <BootstrapTable
           loading={loading}
           bootstrap4
-          keyField="created_at"
+          keyField="id_str"
           data={this.state.tweets}
           columns={columns}
         />
