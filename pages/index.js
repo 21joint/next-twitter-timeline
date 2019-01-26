@@ -71,12 +71,6 @@ export default class Grid extends Component {
         headerStyle
       }
     ];
-    // const defaultSorted = [
-    //   {
-    //     dataField: "created_at",
-    //     order: "desc"
-    //   }
-    // ];
 
     return (
       <Layout>
